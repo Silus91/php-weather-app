@@ -14,9 +14,8 @@ require('form.php');
   </head>
   <body>
     <div class="container">
-
-    <!-- form card -->
-    <div class="row">
+<!-- form card -->
+      <div class="row">
         <div class=" col s12 m6 offset-m3">
           <div class="card">
             <div class="card-content">
@@ -28,7 +27,36 @@ require('form.php');
           </div>
         </div>
       </div>
-      
+
+<!-- card data  -->
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card ">
+            <div class="card-content">
+
+            <?php if($json_response == null) : ?>
+
+                <h5>Sorry... Something went wrong please input correct city name.</h5>
+
+            <?php else : ?>
+
+              <span class="card-title"><?= $city_name ?></span>
+              <span><?= $weather ." - ". $weather_desc ?></span>
+              <ul class="collection">
+                <li class="collection-item"><span><p>Humidity</p><?= $humidity ?> %</span></li>
+                <li class="collection-item"><span><p>Temperature</p><?= $temp ?> C</span></li>
+                <li class="collection-item"><span><p>Feel Temperature</p><?= $fell_temp ?> C</span></li>
+                <li class="collection-item"><span><p>Min_temperature</p><?= $min_temp ?> C</span></li>
+                <li class="collection-item"><span><p>Max temperature</p><?= $max_temp ?> C</span></li>
+                <li class="collection-item"><span><p>Wind speed</p><?= $wind_speed ?> MPH</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <?php endif; ?>
+
     </div>
   </body>
 </html>
