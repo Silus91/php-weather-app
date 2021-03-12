@@ -14,6 +14,21 @@ require('form.php');
   </head>
   <body>
     <div class="container">
+
+    <!-- form card -->
+    <div class="row">
+        <div class=" col s12 m6 offset-m3">
+          <div class="card">
+            <div class="card-content">
+              <form action="" method="get">
+                <input placeholder="City" type="text" name="city" id="city" value=""  class="autocomplete" />
+                <button class="btn " type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </body>
 </html>
