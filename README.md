@@ -1,4 +1,4 @@
-A php api a to parse weather data from OpenWeatherMap.org. This app tries to normalise and abstract the data and remove inconsistencies.
+A php api a to parse weather data from OpenWeatherMap.org. This app renders data from City input.
 
 steps to reproduce
 
