@@ -7,7 +7,8 @@ if(!empty($_GET['city'])){
     $api_key = $_ENV['API_KEY'];
 
     //request
-    $api_url = 'https://api.openweathermap.org/data/2.5/weather?q='.$city.'&units=metric&appid='.$api_key;
+    $api_url = 'https://api.openweathermap.org/data/2.5/weather?q='.$city.'&units=metric&appid=ed72c328325a46589cfad9f60b30bb9a';
+
     $json_response = json_decode(file_get_contents($api_url),true);
 
     // response data  
