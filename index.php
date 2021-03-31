@@ -33,7 +33,6 @@ require('form.php');
         <div class="col s12 m6 offset-m3">
           <div class="card ">
             <div class="card-content">
-
             <?php if($json_response == null) : ?>
 
                 <h5>Sorry... Something went wrong please input correct city name.</h5>
